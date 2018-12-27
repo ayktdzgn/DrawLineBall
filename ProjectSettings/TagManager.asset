@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Diken
   - Testere
+  - Lazer
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - Nokta
   - Testere
   - Diken
-  - 
-  - 
+  - DrawArea
+  - Lazer
   - 
   - 
   - 

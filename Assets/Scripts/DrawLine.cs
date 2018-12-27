@@ -12,7 +12,7 @@ public class DrawLine : MonoBehaviour {
         Vector3 mouse = Input.mousePosition;
         mouse = Camera.main.ScreenToWorldPoint(mouse);
         Rigidbody2D nokta;
-        Rigidbody2D nokta_yedek;
+        
         nokta = Instantiate(noktaPrefab, mouse,Quaternion.identity) as Rigidbody2D;
         
 

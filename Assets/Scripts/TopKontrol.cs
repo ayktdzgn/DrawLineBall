@@ -34,6 +34,14 @@ public class TopKontrol : MonoBehaviour {
             canvas.transform.GetChild(1).GetChild(2).GetComponent<Button>().interactable = false;
         }
 
+        if(col.gameObject.tag == "Lazer")
+        {
+            Destroy(gameObject, 0f);
+
+            canvas.transform.GetChild(1).gameObject.SetActive(true);
+            canvas.transform.GetChild(1).GetChild(2).GetComponent<Button>().interactable = false;
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -11,8 +11,17 @@ public class KameraTakip : MonoBehaviour {
 
     private void LateUpdate()
     {
-        Vector3 desirePosition = new Vector3(transform.position.x,target.position.y + offset.y,transform.position.z);
-        Vector3 smoothedPosition = Vector3.Lerp(transform.position, desirePosition, smoothSpeed);
-        transform.position = new Vector3(transform.position.x,smoothedPosition.y,transform.position.z);
+       
+        if(target != null)
+        {
+            Vector3 desirePosition = new Vector3(transform.position.x, target.position.y + offset.y, transform.position.z);
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desirePosition, smoothSpeed);
+            transform.position = new Vector3(transform.position.x, smoothedPosition.y, transform.position.z);
+        }
+        else
+        {
+            return;
+        }
+
     }
 }

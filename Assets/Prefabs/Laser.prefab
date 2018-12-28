@@ -108,7 +108,7 @@ EdgeCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1467190581011124}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -132,13 +132,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lazer1: {fileID: 1172039955615146}
   lazer2: {fileID: 1653933292722772}
+  laserTime: 1
+  materials:
+  - {fileID: 2100000, guid: a955fda8b90812f4eaaaba6cb8e9a058, type: 2}
+  - {fileID: 2100000, guid: 0af03d75fd55bac47a8c4d00869ddace, type: 2}
+  yesilLazer: 2
+  kirmiziLazer: 4
 --- !u!120 &120083402934432330
 LineRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1467190581011124}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -147,7 +153,7 @@ LineRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 73fb29bf47047c24a99d8501d9cad72a, type: 2}
+  - {fileID: 2100000, guid: a955fda8b90812f4eaaaba6cb8e9a058, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -190,8 +196,8 @@ LineRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.0047169924, b: 0.0047169924, a: 1}
-      key1: {r: 1, g: 0, b: 0, a: 1}
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}

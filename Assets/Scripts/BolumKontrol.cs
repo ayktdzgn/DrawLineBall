@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 public class BolumKontrol : MonoBehaviour {
 
    public GameObject canvas;
 	
 	void Start () {
-		
-	}
+        //PlayerPrefs.DeleteAll();
+    }
 
     public void ButonSec(int gelenbuton)
     {
@@ -41,5 +42,10 @@ public class BolumKontrol : MonoBehaviour {
             Time.timeScale = 1f;
             SceneManager.LoadScene(0);
         }
+
+        if (gelenbuton ==5) { Application.OpenURL("https://play.google.com/store/apps/details?id=com.powersx.JGolf"); }//Jgolf
+        if (gelenbuton ==6) { Application.OpenURL("https://play.google.com/store/apps/details?id=com.MillGames.JUBE"); }//Jube
+        if (gelenbuton ==7) { Application.OpenURL("https://play.google.com/store/apps/details?id=com.MillGames.DefendTheKing"); }//KingDefense
+
     }
 }

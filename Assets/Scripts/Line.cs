@@ -36,7 +36,7 @@ public class Line : MonoBehaviour {
     {
         points.Add(point);
 
-        lineRenderer.numPositions = points.Count;
+        lineRenderer.positionCount = points.Count;
         lineRenderer.SetPosition(points.Count - 1, point);
 
         if (points.Count > 1)
@@ -71,7 +71,7 @@ public class Line : MonoBehaviour {
             lineRenderer.SetPosition(i, points[i]);
 
         }
-        lineRenderer.numPositions = points.Count;
+        lineRenderer.positionCount = points.Count;
 
 
         if (points.Count  >= 0)

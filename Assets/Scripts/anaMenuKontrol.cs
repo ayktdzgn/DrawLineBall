@@ -31,7 +31,7 @@ public class anaMenuKontrol : MonoBehaviour {
         }
         if (gelenbuton == 2)
         {
-            canvas.transform.GetChild(6).gameObject.SetActive(true);
+            canvas.transform.GetChild(4).gameObject.SetActive(true);
 
             for (int i = 0; i < PlayerPrefs.GetInt("kacincilevel"); i++)
             {
@@ -50,7 +50,7 @@ public class anaMenuKontrol : MonoBehaviour {
         }
         if(gelenbuton == 3)
         {
-            canvas.transform.GetChild(6).gameObject.SetActive(false);
+            canvas.transform.GetChild(4).gameObject.SetActive(false);
         }
         if (gelenbuton == 666)
         {
@@ -63,4 +63,5 @@ public class anaMenuKontrol : MonoBehaviour {
     {
         SceneManager.LoadScene(gelenLevel);
     }
+
 }
